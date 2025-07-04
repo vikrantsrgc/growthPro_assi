@@ -20,7 +20,7 @@ export default function Dashboard() {
     toast.loading("Submitting business details...");
 
     try {
-      const response = await fetch("http://localhost:5000/business-data", {
+      const response = await fetch("https://growth-pro-assi-vikrants-projects-c38f5f6c.vercel.app/business-data", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form),
