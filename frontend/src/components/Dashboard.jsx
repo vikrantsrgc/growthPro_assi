@@ -45,7 +45,7 @@ export default function Dashboard() {
 
     try {
       const response = await fetch(
-        `http://localhost:5000/regenerate-headline?name=${form.name || "Business"}&location=${form.location || "City"}`
+        `https://growth-pro-assi-vikrants-projects-c38f5f6c.vercel.app/regenerate-headline?name=${form.name || "Business"}&location=${form.location || "City"}`
       );
       const result = await response.json();
 
